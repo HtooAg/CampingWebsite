@@ -1,0 +1,12 @@
+:root {
+	/* Font */
+	--primary-font: "Roboto";
+
+	/* Font-size */
+	--primary-fz: 1.2em;
+	--secondary-fz: 1.8em;
+	--primary-fw: 600;
+	--primary-fc: #303030;
+	--secondary-fc: #fff;
+	--primary-lineheight: 1.5em;
+}

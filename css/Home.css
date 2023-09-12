@@ -1,0 +1,122 @@
+/* Slider */
+
+.slider img {
+	object-fit: cover;
+	height: 600px;
+	background-position: center;
+}
+@media (max-width: 768px) {
+	.slider img {
+		height: 400px;
+	}
+}
+/* Products */
+.products,
+.sub-products {
+	justify-content: space-between;
+}
+
+.products > .container,
+.sub-products > .container {
+	gap: 2em;
+}
+
+.products-card {
+	position: relative;
+	border: 2px solid #000;
+}
+.products-card .card {
+	display: flex;
+	overflow: hidden;
+}
+.products-card .card-title {
+	text-decoration: none;
+	position: absolute;
+	color: var(--secondary-fc);
+	top: 10em;
+	left: 5em;
+	font-size: var(--primary-fz);
+	font-weight: var(--primary-fw);
+	text-shadow: 1px 1px 10px rgb(0 0 0 / 40%), -1px 1px 10px rgb(0 0 0 / 40%),
+		1px -1px 10px rgb(0 0 0 / 40%), -1px -1px 10px rgb(0 0 0 / 40%);
+}
+.products-card .card img {
+	width: 100%;
+	height: 280px;
+	object-fit: cover;
+	background-position: center;
+	transition: all 0.5s ease-in-out;
+}
+
+.products-card .card img:hover {
+	transform: scale(1.2);
+}
+
+/* About Us */
+
+.aboutus-card {
+	width: 100%;
+	height: 350px;
+}
+
+.img-card,
+.aboutus-text {
+	width: 50%;
+	position: relative;
+}
+.card1,
+.card2 {
+	width: 68%;
+	height: 70%;
+}
+
+.card1 {
+	bottom: 30px;
+	top: 20px;
+}
+.card2 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.aboutus-body {
+	line-height: var(--primary-lineheight);
+	color: var(--primary-fc);
+}
+
+/* Services, Reviews */
+
+.services-card .img-card,
+.reviews-card .img-card {
+	display: flex;
+	height: 100px;
+	width: 100%;
+	justify-content: center;
+}
+.reviews-card .img-card {
+	justify-content: left !important;
+}
+.services-card img,
+.reviews-card img {
+	object-fit: cover;
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+}
+.services-body,
+.reviews-body {
+	color: var(--primary-fc);
+	line-height: var(--primary-lineheight);
+	text-align: center;
+}
+.reviews-body {
+	text-align: left !important;
+}
+.services-card h1,
+.reviews-card h1 {
+	font-size: var(--primary-fz);
+	margin: 20px 0px 0px 0px;
+}
+.reviews-icons i {
+	color: rgb(206, 206, 0);
+}
