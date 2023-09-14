@@ -1,12 +1,17 @@
 :root {
 	/* Font */
 	--primary-font: "Roboto";
-
-	/* Font-size */
+	--title-font: "Dancing Script";
+	--secondary-titlefont: "Kaushan Script";
+	/* Font */
 	--primary-fz: 1.2em;
-	--secondary-fz: 1.8em;
+	--secondary-fz: 2em;
+	--tertiary-fz: 2.5em;
 	--primary-fw: 600;
 	--primary-fc: #303030;
 	--secondary-fc: #fff;
 	--primary-lineheight: 1.5em;
+	--primary-textshadow: 1px 1px 10px rgb(0 0 0 / 40%),
+		-1px 1px 10px rgb(0 0 0 / 40%), 1px -1px 10px rgb(0 0 0 / 40%),
+		-1px -1px 10px rgb(0 0 0 / 40%);
 }

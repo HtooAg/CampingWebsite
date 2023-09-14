@@ -62,3 +62,16 @@
 	background-color: #363636;
 	color: #fff;
 }
+
+/* Media Queries */
+@media (max-width: 767px) {
+	.main-footer > * {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.footer-icons i {
+		font-size: var(--primary-fz);
+	}
+}

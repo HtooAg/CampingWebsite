@@ -9,6 +9,17 @@
 	font-size: var(--primary-fz);
 	align-items: center;
 }
+@media (max-width: 767px) {
+	.nav-contents,
+	.nav-items {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.nav-icons {
+		margin: 40px 0;
+	}
+}
 ul {
 	list-style-type: none;
 }
