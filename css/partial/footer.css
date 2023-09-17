@@ -72,6 +72,9 @@
 		text-align: center;
 	}
 	.footer-icons i {
-		font-size: var(--primary-fz);
+		font-size: 1.5em;
+	}
+	.copyright-text {
+		font-size: 15px;
 	}
 }

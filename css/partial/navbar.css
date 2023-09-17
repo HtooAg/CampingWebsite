@@ -16,8 +16,11 @@
 		justify-content: center;
 		align-items: center;
 	}
-	.nav-icons {
+	.nav-items {
 		margin: 40px 0;
+	}
+	.nav-icons {
+		margin: 10px 0;
 	}
 }
 ul {
