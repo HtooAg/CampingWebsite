@@ -26,12 +26,10 @@
 }
 
 .card {
-	text-align: center;
-	display: flex;
-	flex-direction: column;
 	overflow: hidden;
 	position: relative;
 }
+
 .card-title {
 	position: absolute;
 	font-size: var(--primary-fz);
@@ -43,12 +41,15 @@
 	left: 4.5em;
 	text-decoration: none;
 }
+
 .card .card-img {
 	height: 280px;
 }
+
 .card .card-img img {
 	transition: all 0.7s;
 }
+
 .card .card-img img:hover {
 	transform: scale(1.2);
 }
@@ -61,9 +62,6 @@
 
 /* Media Queries */
 @media (max-width: 1200px) {
-	.container {
-		width: 85%;
-	}
 	.products-card > * {
 		height: 250px;
 	}
@@ -74,15 +72,17 @@
 
 @media (max-width: 989px) {
 	.products-card > * {
-		flex: 1 1 30%;
+		flex: 1 1 45%;
 	}
 	.card-title {
-		left: 3em;
+		top: 10em;
+		left: 9em;
 	}
 }
+
 @media (max-width: 700px) {
-	.products-card > * {
-		flex: 1 1 45%;
+	.card-title {
+		left: 5.3em;
 	}
 }
 
@@ -99,13 +99,19 @@
 /* About Us */
 
 .aboutus-card {
-	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
 	height: 350px;
+	gap: 2em;
+}
+
+.aboutus-card > * {
+	flex: 1;
+	border: 2px solid #000;
 }
 
 .img-card,
 .aboutus-text {
-	width: 100%;
 	position: relative;
 }
 
@@ -113,11 +119,6 @@
 .card2 {
 	width: 68%;
 	height: 70%;
-}
-
-.card1 {
-	bottom: 30px;
-	top: 20px;
 }
 
 .card2 {
@@ -131,13 +132,40 @@
 	color: var(--primary-fc);
 }
 
+@media (max-width: 1200px) {
+	.container {
+		width: 85%;
+	}
+	.aboutus-card {
+		height: 250px;
+	}
+}
+
+/* Media Queries */
+@media (max-width: 989px) {
+	.aboutus-card > * {
+		flex: 1 1 45%;
+	}
+}
+@media (max-width: 700px) {
+	.aboutus-card > * {
+		flex: 1 1 100%;
+	}
+}
+
 /* Services, Reviews */
+.services .container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2em;
+}
+.services-card {
+	flex: 1;
+}
 
 .services-card .img-card,
 .reviews-card .img-card {
 	display: flex;
-	height: 100px;
-	width: 100%;
 	justify-content: center;
 }
 
@@ -177,25 +205,32 @@
 	color: rgb(206, 206, 0);
 }
 
+/* Media Queries */
+@media (max-width: 989px) {
+	.services > .container > * {
+		flex: 1 1 45%;
+	}
+}
+
+@media (max-width: 768px) {
+	.services > .container > * {
+		flex: 1 1 100%;
+	}
+}
+
 /* Meida Queries */
 @media (max-width: 768px) {
-	.services > *,
 	.reviews > * {
 		flex-direction: column;
 	}
-	.reviews-card {
-		flex-direction: row;
-		gap: 2em;
-	}
+
 	.reviews-card img {
 		margin-top: 20px;
 	}
 }
 
 /* Contact Us */
-/* .contactus {
-	flex-wrap: wrap;
-} */
+
 .contactus-card {
 	position: relative;
 	width: 48%;
@@ -209,11 +244,13 @@
 	object-fit: cover;
 	background-position: center;
 }
+
 .contactus-card h1 {
 	font-weight: normal;
 	font-size: var(--secondary-fz);
 	font-family: var(--title-font);
 }
+
 .contactus-text1,
 .text-card {
 	position: absolute;
@@ -224,6 +261,7 @@
 	padding: 20px;
 	flex-direction: column;
 	justify-content: center;
+	overflow: hidden;
 	z-index: 1;
 	opacity: 1;
 	color: var(--secondary-fc);
@@ -247,6 +285,7 @@
 .text-card i {
 	padding-right: 10px;
 }
+
 .text-card i {
 	color: rgb(0, 168, 126);
 }
