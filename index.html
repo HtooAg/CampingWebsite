@@ -25,7 +25,6 @@
 						<li><a href="#index.html">Home</a></li>
 						<li><a href="#products">Products</a></li>
 						<li><a href="#aboutus">About Us</a></li>
-						<!-- <li><a href="#services">Services</a></li> -->
 						<li><a href="#contactus">Contact Us</a></li>
 					</ul>
 					<ul class="nav-icons d-flex">
@@ -39,6 +38,11 @@
 							<a href=""><i class="bi bi-search"></i></a>
 						</li>
 					</ul>
+					<button class="navbar-toggle" onclick="toggleBar">
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</button>
 				</div>
 			</div>
 		</section>
@@ -54,6 +58,7 @@
 			<div class="products-card">
 				<div class="card">
 					<div class="card-img">
+						<a href="#" class="card-text">30% Off</a>
 						<a href="#" class="card-title">Products 1</a>
 						<a href="#">
 							<img src="./img/camping1.jpg" alt="" />
@@ -72,6 +77,7 @@
 
 				<div class="card">
 					<div class="card-img">
+						<a href="#" class="card-text">26% Off</a>
 						<a href="#" class="card-title">Products 3</a>
 						<a href="#">
 							<img src="./img/camping3.jpg" alt="" />
@@ -81,6 +87,7 @@
 
 				<div class="card">
 					<div class="card-img">
+						<a href="#" class="card-text">10% Off</a>
 						<a href="#" class="card-title">Products 4</a>
 						<a href="#">
 							<img src="./img/camping1.jpg" alt="" />
@@ -95,6 +102,7 @@
 			<div class="products-card my-3">
 				<div class="card">
 					<div class="card-img">
+						<a href="#" class="card-text">25% Off</a>
 						<a href="#" class="card-title">Products 5</a>
 						<a href="#">
 							<img src="./img/camping3.jpg" alt="" />
@@ -104,6 +112,7 @@
 
 				<div class="card">
 					<div class="card-img">
+						<a href="#" class="card-text">20% Off</a>
 						<a href="#" class="card-title">Products 6</a>
 						<a href="#">
 							<img src="./img/camping1.jpg" alt="" />
@@ -122,6 +131,7 @@
 
 				<div class="card">
 					<div class="card-img">
+						<a href="#" class="card-text">50% Off</a>
 						<a href="#" class="card-title">Products 8</a>
 						<a href="#">
 							<img src="./img/camping3.jpg" alt="" />
@@ -152,14 +162,12 @@
 						About Us
 					</p>
 					<p class="aboutus-body py-2">
-						Lorem ipsum dolor sit, amet consectetur adipisicing
-						elit. Voluptatem provident, deleniti voluptates voluptas
-						cupiditate incidunt, cumque quidem nam neque perferendis
-						maiores aliquid, quod at accusamus ea vitae pariatur
-						magnam nesciunt. Lorem ipsum dolor sit amet consectetur
-						adipisicing elit. Nam dolorum ab porro vel reiciendis
-						quia corrupti necessitatibus aliquam a obcaecati tempore
-						eos, sed rem quasi veniam magni et? Sequi, quae.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Assumenda placeat consectetur cum laborum enim molestias
+						animi velit veritatis. Illo atque eveniet sequi itaque
+						facere, aliquam velit. Saepe omnis facere ratione! Lorem
+						ipsum, dolor sit amet consectetur adipisicing elit.
+						Incidunt, odio.
 					</p>
 					<a href="#" class="btn">Read More</a>
 				</div>
@@ -411,5 +419,16 @@
 				All rights reserved.
 			</p>
 		</section>
+		<script>
+			const navbarLinks = document.querySelector(".navbar .nav-items");
+
+			const navbarToggle = document.querySelector(
+				".navbar .navbar-toggle"
+			);
+			const toggleBar = navbarToggle.addEventListener("click", () => {
+				navbarLinks.classList.toggle("show");
+				navbarToggle.classList.toggle("active");
+			});
+		</script>
 	</body>
 </html>
