@@ -26,6 +26,7 @@
 
 .footer-items li a {
 	color: var(--secondary-fc);
+	font-size: 15px;
 }
 
 .footer-items li a:hover {
@@ -89,7 +90,7 @@
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
 	.footer-card > * {
 		flex: 1 1 45%;
 	}

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Flex</title>
+		<title>Home</title>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/Home.css" />
 	</head>
@@ -13,7 +13,7 @@
 			<div class="container">
 				<div class="nav-contents d-flex">
 					<div class="logo">
-						<a href="#">
+						<a href="Home.html">
 							<img
 								src="./img/logo.jpeg"
 								alt=""
@@ -22,10 +22,10 @@
 						</a>
 					</div>
 					<ul class="nav-items d-flex">
-						<li><a href="#index.html">Home</a></li>
+						<li><a href="Home.html">Home</a></li>
 						<li><a href="#products">Products</a></li>
-						<li><a href="#aboutus">About Us</a></li>
-						<li><a href="#contactus">Contact Us</a></li>
+						<li><a href="AboutUs.html">About Us</a></li>
+						<li><a href="ContactUs.html">Contact Us</a></li>
 					</ul>
 					<ul class="nav-icons d-flex">
 						<li>
@@ -252,7 +252,7 @@
 							officia at sequi laudantium dolores maxime quas
 							suscipit voluptatum quasi!
 						</p>
-						<a href="#" class="btn">Read More</a>
+						<a href="Reviews.html" class="btn">Read More</a>
 					</div>
 				</div>
 				<div class="reviews-card d-flex">
@@ -274,7 +274,7 @@
 							officia at sequi laudantium dolores maxime quas
 							suscipit voluptatum quasi!
 						</p>
-						<a href="#" class="btn">Read More</a>
+						<a href="Reviews.html" class="btn">Read More</a>
 					</div>
 				</div>
 			</div>
@@ -282,7 +282,7 @@
 
 		<!-- Contact Us -->
 		<p id="contactus" class="title-text my-3">Contact Us</p>
-		<section class="contactus d-flex">
+		<section class="contactus d-flex mb-3">
 			<div class="container d-flex" style="gap: 2em">
 				<div class="contactus-card">
 					<img
@@ -348,6 +348,26 @@
 				</div>
 			</div>
 		</section>
+		<a
+			class="weatherwidget-io container"
+			href="https://forecast7.com/en/21d9295d96/myanmar-burma/"
+			data-label_1="MYANMAR (BURMA)"
+			data-label_2="WEATHER"
+			data-theme="original"
+			>MYANMAR (BURMA) WEATHER</a
+		>
+		<script>
+			!(function (d, s, id) {
+				var js,
+					fjs = d.getElementsByTagName(s)[0];
+				if (!d.getElementById(id)) {
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "https://weatherwidget.io/js/widget.min.js";
+					fjs.parentNode.insertBefore(js, fjs);
+				}
+			})(document, "script", "weatherwidget-io-js");
+		</script>
 
 		<!-- Footer -->
 		<section class="main-footer mt-3">
@@ -362,20 +382,16 @@
 					<li><a href="">Help</a></li>
 				</ul>
 				<ul class="footer-items my-3">
-					<h3 class="pb-2">Products</h3>
-					<li><a href="#">Products 1</a></li>
-					<li><a href="#">Products 2</a></li>
-					<li><a href="#">Products 3</a></li>
-					<li><a href="#">Products 4</a></li>
-					<li><a href="#">Products 5</a></li>
-					<li><a href="#">Products 6</a></li>
-					<li><a href="#">Products 7</a></li>
-					<li><a href="#">Products 8</a></li>
-				</ul>
-				<ul class="footer-items my-3">
 					<h3 class="pb-2">Support</h3>
 					<li><a href="#">Product Safety Information</a></li>
 					<li><a href="#">Warranty Information</a></li>
+				</ul>
+				<ul class="footer-items my-3">
+					<h3 class="pb-2">Top Categories</h3>
+					<li><a href="#">Tents</a></li>
+					<li><a href="#">Camp Beds</a></li>
+					<li><a href="#">Camping Chairs</a></li>
+					<li><a href="#">Camping Furniture</a></li>
 				</ul>
 				<ul class="footer-items my-3">
 					<h3 class="pb-2">Office</h3>
