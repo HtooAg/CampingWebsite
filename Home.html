@@ -23,7 +23,7 @@
 					</div>
 					<ul class="nav-items d-flex">
 						<li><a href="Home.html">Home</a></li>
-						<li><a href="#products">Products</a></li>
+						<li><a href="Products.html">Products</a></li>
 						<li><a href="AboutUs.html">About Us</a></li>
 						<li><a href="ContactUs.html">Contact Us</a></li>
 					</ul>
@@ -32,7 +32,9 @@
 							<a href=""><i class="bi bi-person-fill"></i></a>
 						</li>
 						<li>
-							<a href=""><i class="bi bi-cart-fill"></i></a>
+							<a href="AddtoCart.html"
+								><i class="bi bi-cart-fill"></i
+							></a>
 						</li>
 						<li>
 							<a href=""><i class="bi bi-search"></i></a>
@@ -48,8 +50,29 @@
 		</section>
 
 		<!-- Slider -->
+
 		<section class="slider">
-			<img src="./img/camping1.jpg" alt="" width="100%" />
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./img/camping1.jpg" alt="" width="100%" />
+					</div>
+					<div class="swiper-slide">
+						<img src="./img/camping2.jpg" alt="" width="100%" />
+					</div>
+					<div class="swiper-slide">
+						<img src="./img/camping3.jpg" alt="" width="100%" />
+					</div>
+					<div class="swiper-slide">
+						<img src="./img/camping1.jpg" alt="" width="100%" />
+					</div>
+				</div>
+				<div class="button">
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
 		</section>
 
 		<!-- Products -->
@@ -375,11 +398,11 @@
 				<ul class="footer-items my-3">
 					<h3 class="pb-2">Company</h3>
 					<li><a href="#services">Services</a></li>
-					<li><a href="#reviews">Reviews</a></li>
-					<li><a href="#aboutus">About Us</a></li>
-					<li><a href="">Contact Us</a></li>
-					<li><a href="">FAQs</a></li>
-					<li><a href="">Help</a></li>
+					<li><a href="Reviews.html">Reviews</a></li>
+					<li><a href="AboutUs.html">About Us</a></li>
+					<li><a href="ContactUs.html">Contact Us</a></li>
+					<li><a href="#">FAQs</a></li>
+					<li><a href="#">Help</a></li>
 				</ul>
 				<ul class="footer-items my-3">
 					<h3 class="pb-2">Support</h3>
@@ -435,16 +458,7 @@
 				All rights reserved.
 			</p>
 		</section>
-		<script>
-			const navbarLinks = document.querySelector(".navbar .nav-items");
-
-			const navbarToggle = document.querySelector(
-				".navbar .navbar-toggle"
-			);
-			const toggleBar = navbarToggle.addEventListener("click", () => {
-				navbarLinks.classList.toggle("show");
-				navbarToggle.classList.toggle("active");
-			});
-		</script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+		<script src="js/index.js"></script>
 	</body>
 </html>

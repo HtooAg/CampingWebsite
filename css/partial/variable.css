@@ -1,5 +1,4 @@
 :root {
-	/* Font */
 	--primary-font: "Roboto";
 	--title-font: "Dancing Script";
 	--secondary-titlefont: "Kaushan Script";
@@ -14,4 +13,6 @@
 	--primary-textshadow: 1px 1px 10px rgb(0 0 0 / 40%),
 		-1px 1px 10px rgb(0 0 0 / 40%), 1px -1px 10px rgb(0 0 0 / 40%),
 		-1px -1px 10px rgb(0 0 0 / 40%);
+	--swiper-theme-color: #fff !important;
+	--swiper-navigation-size: 30px !important;
 }

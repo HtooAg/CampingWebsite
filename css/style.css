@@ -8,3 +8,7 @@
 
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,400;1,400&display=swap");
+
+/* Jquery Slider Plugin */
+@import url("https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css");
+@import url("https://unpkg.com/aos@2.3.1/dist/aos.css");

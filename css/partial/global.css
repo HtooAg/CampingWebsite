@@ -76,8 +76,17 @@ body {
 
 .slider img {
 	object-fit: cover;
+	object-position: center;
 	height: 600px;
 	background-position: center;
+}
+
+.slider .button > * {
+	color: #fff;
+}
+
+.swiper-pagination-bullet {
+	color: #fff !important;
 }
 @media (max-width: 768px) {
 	.slider img {

@@ -5,9 +5,14 @@
 	flex-wrap: wrap;
 	gap: 2em;
 	color: var(--primary-fc);
+	align-items: center;
 }
 .customer-review img {
+	margin: auto;
 	object-fit: cover;
+	object-position: center;
+	height: 50%;
+	width: 80%;
 }
 .customer-review > * {
 	flex: 1;
@@ -122,7 +127,23 @@
 	cursor: pointer;
 	border-radius: 5px;
 }
-
+@media (max-width: 989px) {
+	.reviews-textcard > * {
+		flex: 1 1 45%;
+	}
+	.reviews-text > .rate {
+		font-size: var(--secondary-fz);
+	}
+	.reviews-text > .base {
+		font-size: var(--primary-fz);
+		margin-bottom: 12px;
+	}
+	.reviews-text i {
+		font-size: 18px;
+		padding: 0px 6px;
+		color: rgb(206, 206, 0);
+	}
+}
 @media (max-width: 768px) {
 	.reviews > * {
 		flex-direction: column;
