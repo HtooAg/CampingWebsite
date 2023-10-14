@@ -1,16 +1,39 @@
 .pagination > ul > li > a {
 	padding: 10px;
-	background-color: rgb(0, 173, 173);
-	border: 1px solid #d3d3d3;
-	display: inline-block;
-	transition: all 0.5s;
 	font-size: 15px;
-	/* border-radius: 3px; */
+	transition: all 0.5s;
+	display: inline-block;
+}
+.pagination ul {
+	align-items: center;
+}
+.pagination .prev-page,
+.pagination .next-page {
+	font-size: 20px;
 }
 
-.pagination > ul > li > a:hover {
+.pagination > ul > li {
+	transition: all 0.5s;
+	margin: 0 2px;
+}
+
+.pagination > ul > li:hover {
+	background-color: rgb(192, 192, 192);
+}
+
+.pagination > ul > li:first-child:hover,
+.pagination > ul > li:last-child:hover {
+	background-color: var(--secondary-fc);
+}
+
+.pagination > ul > li > a.active {
+	background-color: rgb(0, 173, 173);
+	color: var(--secondary-fc);
+}
+
+.pagination > ul > li > a.active:hover {
 	background-color: rgb(0, 121, 121);
-	color: #fff;
+	color: var(--secondary-fc);
 }
 
 .cart .card {
@@ -113,7 +136,7 @@ del {
 	justify-content: space-around;
 	align-items: center;
 	text-decoration: none;
-	color: #fff;
+	color: var(--secondary-fc);
 	background-color: chocolate;
 	border-radius: 35px;
 	transition: all 0.5s;
@@ -133,7 +156,7 @@ del {
 	justify-content: space-around;
 	align-items: center;
 	text-decoration: none;
-	color: #fff;
+	color: var(--secondary-fc);
 	background-color: rgb(33, 67, 255);
 	padding: 3px 0;
 	border-radius: 5px;

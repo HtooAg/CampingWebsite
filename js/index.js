@@ -19,7 +19,7 @@ const swiper = new Swiper(".slider .swiper", {
 	},
 	loop: true,
 	autoplay: {
-		delay: 2000,
+		delay: 2500,
 	},
 });
 
@@ -82,15 +82,20 @@ for (let i = 1; i <= 50; i++) {
 AOS.init();
 
 // Pagination
-
 const itemsPerPage = 4;
 const $cards = $(".card");
 const $pagination = $(".pagination");
 const pageCount = Math.ceil($cards.length / itemsPerPage);
+
 let currentPage =
 	localStorage.getItem("currentPage") === null
 		? 1
 		: parseInt(localStorage.getItem("currentPage"));
+
+const setActivePage = () => {
+	$pagination.find(".page-link").removeClass("active");
+	$pagination.find(`.page-link:eq(${currentPage - 1})`).addClass("active");
+};
 
 const showPageWithDelay = page => {
 	currentPage = page;
@@ -98,8 +103,9 @@ const showPageWithDelay = page => {
 	const startIndex = (page - 1) * itemsPerPage;
 	const endIndex = startIndex + itemsPerPage;
 
-	$cards.hide();
+	setActivePage();
 
+	$cards.hide();
 	setTimeout(() => {
 		$cards.slice(startIndex, endIndex).show();
 		refreshAOSWithDelay();
@@ -115,8 +121,7 @@ const refreshAOSWithDelay = () => {
 $pagination.on("click", ".page-link", e => {
 	e.preventDefault();
 	const pageText = $(e.target).text();
-	const page = getPageFromText(pageText);
-	showPageWithDelay(page);
+	showPageWithDelay(getPageFromText(pageText));
 });
 
 $pagination.on("click", ".prev-page", e => {
@@ -133,7 +138,7 @@ $pagination.on("click", ".next-page", e => {
 	}
 });
 
-showPageWithDelay(1);
+showPageWithDelay(currentPage);
 
 const getPageFromText = pageText => {
 	switch (pageText) {

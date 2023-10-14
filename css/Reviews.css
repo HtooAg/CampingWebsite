@@ -117,23 +117,51 @@ progress::-webkit-progress-value {
 .reviews-icons i {
 	color: rgb(206, 206, 0);
 }
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 50%;
+}
 
-.your-review > textarea {
+.contact-form input,
+select,
+textarea {
 	width: 100%;
 	box-sizing: border-box;
-	resize: vertical;
 	outline-color: rgb(209, 209, 209);
 	border: 1px solid #d3d3d3;
 	border-radius: 3px;
+	color: var(--primary-fc);
+}
+
+.contact-form label {
+	color: var(--primary-fc);
+	font-size: var(--primary-fz);
+}
+
+.contact-form input,
+select,
+textarea {
 	padding: 10px 10px;
 }
 
-.your-review .form-actions {
+.form-row > * {
+	margin: 20px 0;
+}
+
+.contact-form > * {
+	justify-content: space-between;
+	flex: 1;
+}
+
+.contact-form .form-actions {
 	display: flex;
 	justify-content: flex-start;
 }
 
-.your-review button {
+.contact-form button {
 	text-decoration: none;
 	font-style: italic;
 	font-size: 15px;
@@ -143,10 +171,18 @@ progress::-webkit-progress-value {
 	padding: 10px 15px;
 	cursor: pointer;
 	border-radius: 5px;
+	transition: all 0.5s;
 }
+.contact-form button:hover {
+	background-color: rgb(0, 139, 139);
+}
+
 @media (max-width: 989px) {
 	.reviews-text > .base {
 		margin-bottom: 12px;
+	}
+	.contact-form {
+		width: 100%;
 	}
 }
 @media (max-width: 768px) {
