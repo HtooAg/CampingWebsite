@@ -37,6 +37,7 @@
 	align-items: center;
 	justify-content: space-around;
 	padding: 20px 0;
+	text-decoration: none;
 }
 .reviews-icons i {
 	color: rgb(206, 206, 0);
@@ -44,6 +45,7 @@
 
 .price {
 	justify-content: center;
+	color: var(--primary-fc);
 }
 
 del {

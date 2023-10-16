@@ -24,7 +24,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2em;
-
 }
 
 progress {
@@ -160,7 +159,7 @@ textarea {
 	flex: 1;
 }
 
-.contact-form .form-actions a{
+.contact-form .form-actions a {
 	display: inline;
 	text-decoration: none;
 	font-style: italic;
