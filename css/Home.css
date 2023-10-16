@@ -8,8 +8,9 @@
 }
 
 .products-card > * {
-	height: 280px;
 	flex: 1;
+	border: 1px solid #d3d3d3;
+	border-radius: 20px;
 }
 
 .card {
@@ -45,6 +46,8 @@
 
 .card .card-img {
 	height: 280px;
+	width: 100%;
+	border-radius: 20px;
 }
 
 .card .card-img img {
@@ -52,7 +55,8 @@
 }
 
 .card .card-img img:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
+	opacity: 0.9;
 }
 
 .card .card-img img {
@@ -61,6 +65,13 @@
 	object-fit: cover;
 }
 
+.more {
+	text-decoration: none;
+	color: var(--primary-fc);
+	text-align: end;
+	font-style: italic;
+	transition: all 0.5s;
+}
 /* Media Queries */
 @media (max-width: 1200px) {
 	.products-card > * {
@@ -265,6 +276,8 @@
 
 .contactus-card:hover .img-card {
 	opacity: 0;
+	transition: all 0.7s ease;
+
 }
 
 .contactus-card:hover .contactus-text1,
@@ -306,6 +319,6 @@
 	}
 
 	.contactus-card .img-card {
-		height: 300px;
+		height: 350px;
 	}
 }

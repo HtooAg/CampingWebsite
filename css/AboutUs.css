@@ -10,11 +10,15 @@
 	flex: 1;
 }
 
-.img-card,
-.aboutus-text {
+.img-card {
 	position: relative;
 }
-.aboutus-card .img-card img {
+
+.aboutus2 img  {
+	width: 100%;
+	/* width: 80%;
+	height: 80%;
+	margin: auto; */
 	object-fit: cover;
 }
 
@@ -22,6 +26,7 @@
 .card2 {
 	width: 68%;
 	height: 75%;
+	object-fit: cover;
 }
 
 .card2 {
@@ -83,12 +88,14 @@
 		text-align: center;
 	}
 }
+
 @media (max-width: 1200px) {
 	.offer-contents .logo img {
 		width: 180px;
 		height: 180px;
 	}
 }
+
 @media (max-width: 989px) {
 	.offer-contents > * {
 		flex: 1 1 30%;

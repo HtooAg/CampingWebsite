@@ -11,9 +11,10 @@
 	background-color: #363636;
 }
 
-.footer-items h3 {
+.footer-items .f-title {
 	color: var(--secondary-fc);
 	font-weight: var(--primary-fw);
+	font-size: var(--primary-fz);
 }
 
 .footer-items li {

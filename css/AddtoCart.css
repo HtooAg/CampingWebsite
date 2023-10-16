@@ -1,12 +1,14 @@
 .pagination > ul > li > a {
 	padding: 10px;
-	font-size: 15px;
+	font-size: 13px;
 	transition: all 0.5s;
 	display: inline-block;
 }
+
 .pagination ul {
 	align-items: center;
 }
+
 .pagination .prev-page,
 .pagination .next-page {
 	font-size: 20px;
@@ -39,7 +41,7 @@
 .cart .card {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 2em;
+	/* gap: 2em; */
 }
 
 .cart .card > * {
@@ -48,11 +50,11 @@
 }
 
 .cart img {
+	height: 400px;
+	width: 80%;
 	object-fit: cover;
 	object-position: center;
-	background-size: cover;
-	background-position: center;
-	margin: auto;
+	margin: left;
 }
 
 .img-text {
@@ -64,6 +66,7 @@
 	padding: 10px;
 	color: var(--primary-fc);
 }
+
 .img-text > * {
 	padding: 10px;
 }
@@ -76,9 +79,11 @@
 .rating-length {
 	display: flex;
 }
+
 .rateno {
 	margin-top: 2px;
 }
+
 del {
 	color: red;
 	margin: 0px 10px;
@@ -174,24 +179,36 @@ del {
 
 /* Media Queries */
 @media (max-width: 989px) {
-	.cart .card {
-		gap: 0;
+
+	.cart img {
+		height: 350px;
+		margin: auto;
 	}
+
 	.cart .card > * {
 		flex: 1 1 100%;
 	}
+
 	.img-text > * {
 		padding: 10px 0;
 	}
+
 	.addtocart,
 	.payment {
 		font-size: 15px;
 	}
+
 	.pagination > ul {
 		justify-content: center;
 		align-items: center;
 	}
+	
 	.pagination > ul > li > a {
 		font-size: 12px;
+	}
+}
+@media (max-width: 600px) {
+	.cart img {
+		width: 100%;
 	}
 }

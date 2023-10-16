@@ -74,11 +74,15 @@ body {
 	transform: translateY(-7px);
 }
 
+.logo img {
+	height: 80px;
+}
 .slider img {
 	object-fit: cover;
 	object-position: center;
 	height: 600px;
 	background-position: center;
+	width: 100%;
 }
 .swiper-slide {
 	position: relative;

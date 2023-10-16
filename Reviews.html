@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Reviews</title>
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/Reviews.css" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/Reviews.css">
 	</head>
 	<body>
 		<!-- Navbar -->
-		<section class="navbar d-flex">
+		<div class="navbar d-flex">
 			<div class="container">
 				<div class="nav-contents d-flex">
 					<div class="logo">
@@ -17,8 +17,7 @@
 							<img
 								src="./img/logo.jpeg"
 								alt=""
-								width="100%"
-								height="80px" />
+							>
 						</a>
 					</div>
 					<ul class="nav-items d-flex">
@@ -38,30 +37,36 @@
 							<a href=""><i class="bi bi-search"></i></a>
 						</li>
 					</ul>
-					<button class="navbar-toggle" onclick="toggleBar">
+					<div class="navbar-toggle" onclick="toggleBar">
 						<div class="bar"></div>
 						<div class="bar"></div>
 						<div class="bar"></div>
-					</button>
+					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 		<!-- Slider -->
 
-		<section class="slider">
+		<div class="slider">
 			<div class="swiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<img src="./img/camping1.jpg" alt="" width="100%" />
+						<img src="./img/camping1.jpg" alt="">
+						<h1
+							class="title"
+							data-aos="fade-up"
+							data-aos-duration="2000">
+							Please recommend
+						</h1>
 					</div>
 					<div class="swiper-slide">
-						<img src="./img/camping2.jpg" alt="" width="100%" />
+						<img src="./img/camping2.jpg" alt="">
 					</div>
 					<div class="swiper-slide">
-						<img src="./img/camping3.jpg" alt="" width="100%" />
+						<img src="./img/camping3.jpg" alt="">
 					</div>
 					<div class="swiper-slide">
-						<img src="./img/camping4.jpg" alt="" width="100%" />
+						<img src="./img/camping4.jpg" alt="">
 					</div>
 				</div>
 				<div class="button">
@@ -70,14 +75,14 @@
 					<div class="swiper-button-next"></div>
 				</div>
 			</div>
-		</section>
+		</div>
 
 		<!-- Reviews -->
-		<p id="reviews" class="title-text my-3">Customer Reviews</p>
-		<section class="customer-review container">
+		<p class="title-text my-3">Customer Reviews</p>
+		<div class="customer-review container">
 			<div class="card">
 				<div class="img-card d-flex">
-					<img src="./img/products1.jpg" alt="" width="100%" />
+					<img src="./img/products1.jpg" alt="">
 				</div>
 				<h1 style="text-align: center; padding-top: 30px">
 					Eureka Space Camp 4 Tent
@@ -158,17 +163,17 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 
-		<p id="reviews" class="title-text my-3">Reviews (4)</p>
-		<section class="reviews d-flex mb-3">
+		<p class="title-text my-3">Reviews (4)</p>
+		<div class="reviews d-flex mb-3">
 			<div class="container d-flex" style="gap: 2em">
 				<div class="reviews-card d-flex">
 					<div class="img-card">
-						<img src="./img/reviews1.jpg" alt="" />
+						<img src="./img/reviews1.jpg" alt="">
 					</div>
 					<div class="reviews-body">
-						<h1>Person 1</h1>
+						<h1>Chris Lee</h1>
 						<div class="reviews-icons py-1">
 							<i class="bi bi-star-fill"></i>
 							<i class="bi bi-star-fill"></i>
@@ -176,20 +181,16 @@
 							<i class="bi bi-star-fill"></i>
 						</div>
 						<p class="mb-1">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Iure quis ipsum dicta tempora officiis
-							consequatur rerum laborum reprehenderit labore, enim
-							officia at sequi laudantium dolores maxime quas
-							suscipit voluptatum quasi!
+							I was on a budget but didn't want to compromise on quality, and the Eureka Space Camp 4 Tent exceeded my expectations. It offers great value for the price. I've used it for multiple trips, and it still looks and performs like new. It's a wise investment for anyone looking for an affordable yet reliable tent.
 						</p>
 					</div>
 				</div>
 				<div class="reviews-card d-flex">
 					<div class="img-card">
-						<img src="./img/reviews2.jpg" alt="" />
+						<img src="./img/reviews2.jpg" alt="">
 					</div>
 					<div class="reviews-body">
-						<h1>Person 2</h1>
+						<h1>John Doe</h1>
 						<div class="reviews-icons py-1">
 							<i class="bi bi-star-fill"></i>
 							<i class="bi bi-star-fill"></i>
@@ -197,24 +198,20 @@
 							<i class="bi bi-star-half"></i>
 						</div>
 						<p class="mb-1">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Iure quis ipsum dicta tempora officiis
-							consequatur rerum laborum reprehenderit labore, enim
-							officia at sequi laudantium dolores maxime quas
-							suscipit voluptatum quasi!
+							I encountered a sudden downpour on our last camping trip, and the Eureka Space Camp 4 kept us dry. The rainfly covers well, and the bathtub floor design prevents any water from seeping in. However, the only minor issue was the zippers getting stuck occasionally, which can be a bit frustrating.
 						</p>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="reviews d-flex mb-3">
+		</div>
+		<div class="reviews d-flex mb-3">
 			<div class="container d-flex" style="gap: 2em">
 				<div class="reviews-card d-flex">
 					<div class="img-card">
-						<img src="./img/reviews3.jpeg" alt="" />
+						<img src="./img/reviews3.jpeg" alt="">
 					</div>
 					<div class="reviews-body">
-						<h1>Person 3</h1>
+						<h1>Alexander</h1>
 						<div class="reviews-icons py-1">
 							<i class="bi bi-star-fill"></i>
 							<i class="bi bi-star-fill"></i>
@@ -222,20 +219,16 @@
 							<i class="bi bi-star-fill"></i>
 						</div>
 						<p class="mb-1">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Iure quis ipsum dicta tempora officiis
-							consequatur rerum laborum reprehenderit labore, enim
-							officia at sequi laudantium dolores maxime quas
-							suscipit voluptatum quasi!
+							What I love about this tent is its adaptability. Whether you're camping in warm weather or chilly nights, it performs well. The rainfly keeps you dry in wet conditions, and the mesh windows keep you cool in the heat. The only downside is that it can be a bit chilly on cold nights, so be prepared with warm sleeping gear.
 						</p>
 					</div>
 				</div>
 				<div class="reviews-card d-flex">
 					<div class="img-card">
-						<img src="./img/reviews4.jpeg" alt="" />
+						<img src="./img/reviews4.jpeg" alt="">
 					</div>
 					<div class="reviews-body">
-						<h1>Person 4</h1>
+						<h1>Rosemarie</h1>
 						<div class="reviews-icons py-1">
 							<i class="bi bi-star-fill"></i>
 							<i class="bi bi-star-fill"></i>
@@ -243,27 +236,23 @@
 							<i class="bi bi-star-half"></i>
 						</div>
 						<p class="mb-1">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Iure quis ipsum dicta tempora officiis
-							consequatur rerum laborum reprehenderit labore, enim
-							officia at sequi laudantium dolores maxime quas
-							suscipit voluptatum quasi!
+							The Eureka Space Camp 4 Tent has a lot of potential, but there are a few areas where it could be improved. First, the setup instructions could be clearer. Second, the stakes provided could be more robust. And lastly, the zippers sometimes catch on the fabric. With a few upgrades, this could be a top-tier tent.
 						</p>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 
-		<p id="reviews" class="title-text my-3">Rating</p>
-		<section class="rating">
+		<p class="title-text my-3">Rating</p>
+		<div class="rating">
 			<i class="bi bi-star"></i>
 			<i class="bi bi-star"></i>
 			<i class="bi bi-star"></i>
 			<i class="bi bi-star"></i>
 			<i class="bi bi-star"></i>
-		</section>
+		</div>
 
-		<p id="reviews" class="title-text my-3">Your Review</p>
+		<p class="title-text my-3">Your Review</p>
 		<form class="container">
 			<div class="contact-form" style="margin: auto">
 				<div class="form-row">
@@ -275,7 +264,7 @@
 							name="full-name"
 							class="mt-2"
 							placeholder="Name"
-							required />
+							required>
 					</div>
 					<div class="row-form">
 						<label for="email">Email Address</label>
@@ -285,7 +274,7 @@
 							name="email"
 							class="mt-2"
 							placeholder="Email"
-							required />
+							required>
 					</div>
 					<div class="row-form">
 						<label for="message">Message</label>
@@ -304,29 +293,18 @@
 				</div>
 				<div class="form-actions" style="margin-top: 5px">
 					<a href="#">
-						<button type="submit">Add a Review</button>
+						Add a Review
 					</a>
-				</div>
+				</div>				
 			</div>
 		</form>
-		<!-- <section class="your-review container" style="margin: 30px auto">
-			<textarea
-				cols="30"
-				rows="20"
-				placeholder="Why do you recommend ..."></textarea>
-			<div class="form-actions mt-2">
-				<a href="#">
-					<button type="submit">Add a Review</button>
-				</a>
-			</div>
-		</section> -->
 
 		<!-- Footer -->
-		<section class="main-footer mt-3">
+		<div class="main-footer mt-3">
 			<div class="footer-card container">
 				<ul class="footer-items my-3">
-					<h3 class="pb-2">Company</h3>
-					<li><a href="#services">Services</a></li>
+					<li class="f-title pb-2">Company</li>
+					<li><a href="Offers.html">Services</a></li>
 					<li><a href="Reviews.html">Reviews</a></li>
 					<li><a href="AboutUs.html">About Us</a></li>
 					<li><a href="ContactUs.html">Contact Us</a></li>
@@ -334,24 +312,24 @@
 					<li><a href="#">Help</a></li>
 				</ul>
 				<ul class="footer-items my-3">
-					<h3 class="pb-2">Support</h3>
+					<li class="f-title pb-2">Support</li>
 					<li><a href="#">Product Safety Information</a></li>
 					<li><a href="#">Warranty Information</a></li>
 				</ul>
 				<ul class="footer-items my-3">
-					<h3 class="pb-2">Top Categories</h3>
-					<li><a href="#">Tents</a></li>
-					<li><a href="#">Camp Beds</a></li>
-					<li><a href="#">Camping Chairs</a></li>
-					<li><a href="#">Camping Furniture</a></li>
+					<li class="f-title pb-2">Top Categories</li>
+					<li><a href="Products.html">Tents</a></li>
+					<li><a href="Products.html">Camp Beds</a></li>
+					<li><a href="Products.html">Camping Chairs</a></li>
+					<li><a href="Products.html">Camping Furniture</a></li>
 				</ul>
 				<ul class="footer-items my-3">
-					<h3 class="pb-2">Office</h3>
+					<li class="f-title pb-2">Office</li>
 					<li style="line-height: var(--primary-lineheight)">
 						<a href="#"
-							>No. 123, Alanpya Pagoda Road, <br />Dagon Township
-							Yangon, Myanmar. <br />(95-1) 8255819 – 21, 8255823
-							– 32, 8255834 <br />info@retailcampinggroup.com</a
+							>No. 123, Alanpya Pagoda Road, <br>Dagon Township
+							Yangon, Myanmar. <br>(95-1) 8255819 – 21, 8255823
+							– 32, 8255834 <br>info@retailcampinggroup.com</a
 						>
 					</li>
 					<li style="text-align: right">
@@ -361,33 +339,34 @@
 					</li>
 				</ul>
 			</div>
-		</section>
-		<section class="footer">
+		</div>
+		<div class="footer">
 			<ul class="footer-icons d-flex container">
 				<li>
-					<a href=""><i class="bi bi-facebook"></i></a>
+					<a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
 				</li>
 				<li>
-					<a href=""><i class="bi bi-youtube"></i></a>
+					<a href="https://www.youtube.com"><i class="bi bi-youtube"></i></a>
 				</li>
 				<li>
-					<a href=""><i class="bi bi-twitter"></i></a>
+					<a href="https://www.twitter.com"><i class="bi bi-twitter"></i></a>
 				</li>
 				<li>
-					<a href=""><i class="bi bi-instagram"></i></a>
+					<a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
 				</li>
 				<li>
-					<a href=""><i class="bi bi-linkedin"></i></a>
+					<a href="https://mm.linkedin.com"><i class="bi bi-linkedin"></i></a>
 				</li>
 			</ul>
-		</section>
-		<section class="copyright-text py-2">
+		</div>
+		<div class="copyright-text py-2">
 			<p class="container">
 				Copyright &copy; RCC Corporation of America and RCC Corporation.
 				All rights reserved.
 			</p>
-		</section>
+		</div>
 		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="js/index.js"></script>
 	</body>
 </html>
