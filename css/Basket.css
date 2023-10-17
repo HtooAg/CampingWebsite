@@ -15,16 +15,24 @@ td {
 	text-align: center;
 	padding: 1rem;
 	border: 1px solid #d3d3d3;
+	color: var(--primary-fc);
 }
 
 tr:nth-child(even) {
 	background-color: #ebebeb;
 }
 
+.clear {
+	font-size: 14px;
+	text-decoration: none;
+	color: var(--primary-fc);
+}
+
 @media (max-width: 989px) {
 	table {
 		font-size: 12px;
 	}
+
 	table > tr,
 	th,
 	td {

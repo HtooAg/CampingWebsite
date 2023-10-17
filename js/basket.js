@@ -1,6 +1,8 @@
 // AddtoCart
-document.addEventListener("DOMContentLoaded", function () {
+
+document.addEventListener("DOMContentLoaded", () => {
 	const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
 	const updateCount = (count, countDisplay) => {
 		countDisplay.textContent = count;
 	};
@@ -11,9 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		const decrementButton = document.getElementById(
 			`decrement${index + 1}`
 		);
+
 		const incrementButton = document.getElementById(
 			`increment${index + 1}`
 		);
+
 		const countDisplay = document.getElementById(`count${index + 1}`);
 
 		let count = 0;
@@ -48,47 +52,55 @@ document.addEventListener("DOMContentLoaded", function () {
 			localStorage.setItem("cart", JSON.stringify(cart));
 
 			alert(`Added "${productName}" to the cart.`);
-			window.location.href = "Basket.html";
+			window.location.href = "Basket.html#add";
 		});
 	});
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
 	const cart = JSON.parse(localStorage.getItem("cart")) || [];
 	const cartItemsContainer = document.getElementById("cart-items");
 	let totalAmount = 0;
 
-	cart.forEach(function (productData) {
-		const row = document.createElement("tr");
-		row.innerHTML = `
-            <td>${productData.name}</td>
-            <td>$${
-				productData.price ? productData.price.toFixed(2) : "N/A"
-			}</td>
-            <td>${productData.quantity || "N/A"}</td>
-            <td>$${
+	if (cartItemsContainer) {
+		cart.forEach(productData => {
+			const row = document.createElement("tr");
+			row.innerHTML = `
+			<td>${productData.name}</td>
+			<td>$${productData.price ? productData.price.toFixed(2) : "N/A"}</td>
+			<td>${productData.quantity || "N/A"}</td>
+			<td>$${
 				productData.price && productData.quantity
 					? (productData.price * productData.quantity).toFixed(2)
 					: "N/A"
 			}</td>
-        `;
-		cartItemsContainer.appendChild(row);
+		  `;
 
-		if (productData.price && productData.quantity) {
-			totalAmount += productData.price * productData.quantity;
+			cartItemsContainer.appendChild(row);
+
+			if (productData.price && productData.quantity) {
+				totalAmount += productData.price * productData.quantity;
+			}
+		});
+
+		if (cart.length > 0) {
+			const totalRow = document.createElement("tr");
+			totalRow.innerHTML = `
+			<td colspan="3">Total:</td>
+			<td>$${totalAmount.toFixed(2)}</td>
+		  `;
+
+			cartItemsContainer.appendChild(totalRow);
 		}
-	});
-
-	const totalRow = document.createElement("tr");
-	totalRow.innerHTML = `
-        <td colspan="3">Total:</td>
-        <td>$${totalAmount.toFixed(2)}</td>
-    `;
-	cartItemsContainer.appendChild(totalRow);
+	}
 });
 
+// Clear cart
 const resetCart = () => {
 	const cart = [];
 	localStorage.setItem("cart", JSON.stringify(cart));
-	location.reload();
+	console.log("Cart has been reset.");
+	setTimeout(() => {
+		location.reload();
+	}, 300);
 };

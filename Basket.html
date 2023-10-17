@@ -50,6 +50,12 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<img src="./img/camping1.jpg" alt="" />
+						<h1
+							class="title"
+							data-aos="fade-up"
+							data-aos-duration="2000">
+							Thanks for filling carts
+						</h1>
 					</div>
 					<div class="swiper-slide">
 						<img src="./img/camping2.jpg" alt="" />
@@ -68,23 +74,27 @@
 				</div>
 			</div>
 		</div>
-		<div class="basket-table container">
-			<table class="my-3">
-				<tr>
-					<th>Product Name</th>
-					<th>Price</th>
-					<th>Quantity</th>
-					<th>Total</th>
-				</tr>
+		<div class="basket-table my-3" id="add">
+			<div class="container">
+				<a href="AddtoCart.html" class="clear" title="Back"
+					>&lt; Back to AddtoCart</a
+				>
+				<table class="my-3">
+					<tr>
+						<th>Product Name</th>
+						<th>Price</th>
+						<th>Quantity</th>
+						<th>Total</th>
+					</tr>
 
-				<tbody id="cart-items">
-					<!-- Cart items will be added here using JavaScript -->
-				</tbody>
-			</table>
-			<button class="but" onclick="resetCart()">Clear Cart</button>
-			<a href="AddtoCart.html" style="text-decoration: none; margin: 10px"
-				>Back to AddtoCart</a
-			>
+					<tbody id="cart-items">
+						<!-- Cart items will be added here using JavaScript -->
+					</tbody>
+				</table>
+				<button type="submit" class="but" onclick="resetCart()">
+					Clear cart
+				</button>
+			</div>
 		</div>
 
 		<!-- Footer -->

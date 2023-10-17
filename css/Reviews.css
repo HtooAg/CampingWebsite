@@ -159,59 +159,50 @@ textarea {
 	flex: 1;
 }
 
-.contact-form .form-actions a {
-	display: inline;
-	text-decoration: none;
-	font-style: italic;
-	font-size: 15px;
-	background-color: rgb(0, 173, 173);
-	color: #fff;
-	border: none;
-	padding: 10px 15px;
-	cursor: pointer;
-	border-radius: 5px;
-	transition: all 0.5s;
-}
-
-.contact-form .form-actions a:hover {
-	background-color: rgb(0, 139, 139);
-}
-
 @media (max-width: 989px) {
 	.contact-form {
 		width: 100%;
 	}
 }
+
 @media (max-width: 768px) {
 	.reviews > * {
 		flex-direction: column;
 	}
+
 	.reviews-card {
 		align-items: center;
 	}
+
 	.reviews-body {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		flex-direction: column;
 	}
+
 	.reviews-body p {
 		text-align: center;
 	}
+
 	.reviews-textcard {
 		gap: 0;
 	}
+
 	.reviews-text > .rate {
 		font-size: var(--secondary-fz);
 	}
+
 	.reviews-text > .base {
 		font-size: var(--primary-fz);
 		margin-bottom: 12px;
 	}
+
 	.customer-review > * {
 		flex-direction: column;
 		flex: 1 1 100%;
 	}
+
 	.reviews-card img {
 		margin-top: 20px;
 	}

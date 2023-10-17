@@ -9,7 +9,7 @@
 
 .products-card > * {
 	flex: 1;
-	border: 1px solid #d3d3d3;
+	border: 2px solid #d3d3d3;
 	border-radius: 20px;
 }
 
@@ -47,16 +47,16 @@
 .card .card-img {
 	height: 280px;
 	width: 100%;
-	border-radius: 20px;
 }
 
 .card .card-img img {
 	transition: all 0.7s;
+	border-radius: 20px;
 }
 
 .card .card-img img:hover {
 	transform: scale(1.1);
-	opacity: 0.9;
+	opacity: 0.8;
 }
 
 .card .card-img img {
@@ -277,7 +277,6 @@
 .contactus-card:hover .img-card {
 	opacity: 0;
 	transition: all 0.7s ease;
-
 }
 
 .contactus-card:hover .contactus-text1,

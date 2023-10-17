@@ -24,14 +24,14 @@ const swiper = new Swiper(".slider .swiper", {
 });
 
 // Product Slider
-const initializeSwiper = selector => {
+const initializeSwiper = (selector, prevButtonId, nextButtonId) => {
 	return new Swiper(selector, {
 		spaceBetween: 30,
 		loop: true,
 		effect: "slide",
 		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev"
+			nextEl: `#${nextButtonId}`,
+			prevEl: `#${prevButtonId}`
 		},
 		autoplay: false,
 		breakpoints: {
@@ -51,8 +51,9 @@ const initializeSwiper = selector => {
 	});
 };
 
-const swipers = initializeSwiper("#swiper");
-const swiper1 = initializeSwiper("#swiper1");
+const swipers = initializeSwiper("#swiper", "prev", "next");
+const swiper1 = initializeSwiper("#swiper1", "prev1", "next1");
+const swiper2 = initializeSwiper("#swiper2", "prev2", "next2");
 
 // AOS
 AOS.init();
