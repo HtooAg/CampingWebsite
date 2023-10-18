@@ -54,6 +54,7 @@ const initializeSwiper = (selector, prevButtonId, nextButtonId) => {
 const swipers = initializeSwiper("#swiper", "prev", "next");
 const swiper1 = initializeSwiper("#swiper1", "prev1", "next1");
 const swiper2 = initializeSwiper("#swiper2", "prev2", "next2");
+const swiper3 = initializeSwiper("#swiper3", "prev3", "next3");
 
 // AOS
 AOS.init();

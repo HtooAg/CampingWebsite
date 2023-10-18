@@ -91,9 +91,15 @@
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	.footer-card > * {
 		flex: 1 1 45%;
+	}
+	.footer-icons i {
+		font-size: 1.5em;
+	}
+	.copyright-text {
+		font-size: 15px;
 	}
 }
 
@@ -107,14 +113,5 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-	}
-}
-
-@media (max-width: 767px) {
-	.footer-icons i {
-		font-size: 1.5em;
-	}
-	.copyright-text {
-		font-size: 15px;
 	}
 }

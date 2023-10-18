@@ -54,9 +54,6 @@ body {
 	color: var(--primary-fc);
 	text-align: center;
 	font-family: var(--title-font);
-	/* text-decoration: underline;
-	text-decoration-color: rgb(0, 158, 158);
-	text-decoration-thickness: 3px; */
 }
 
 /* Home Page btn */

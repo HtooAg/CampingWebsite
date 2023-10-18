@@ -16,11 +16,13 @@
 }
 
 #prev,
-#prev1,
 #next,
+#prev1,
 #next1,
 #prev2,
-#next2 {
+#next2,
+#prev3,
+#next3 {
 	color: var(--secondary-fc);
 	/* font-weight: bold; */
 	border-radius: 5px;

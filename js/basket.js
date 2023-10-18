@@ -67,12 +67,12 @@ document.addEventListener("DOMContentLoaded", () => {
 			const row = document.createElement("tr");
 			row.innerHTML = `
 			<td>${productData.name}</td>
-			<td>$${productData.price ? productData.price.toFixed(2) : "N/A"}</td>
-			<td>${productData.quantity || "N/A"}</td>
+			<td>$${productData.price ? productData.price.toFixed(2) : 0}</td>
+			<td>${productData.quantity || 0}</td>
 			<td>$${
 				productData.price && productData.quantity
 					? (productData.price * productData.quantity).toFixed(2)
-					: "N/A"
+					: 0
 			}</td>
 		  `;
 

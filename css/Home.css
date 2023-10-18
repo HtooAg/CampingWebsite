@@ -126,6 +126,7 @@
 .aboutus-body {
 	line-height: var(--primary-lineheight);
 	color: var(--primary-fc);
+	text-align: justify;
 }
 
 /* Media Queries */
@@ -151,6 +152,7 @@
 	.aboutus-card > * {
 		flex: 1 1 100%;
 	}
+
 	.aboutus-text {
 		display: flex;
 		flex-direction: column;
@@ -202,6 +204,10 @@
 
 .reviews-body {
 	text-align: left !important;
+}
+
+.reviews-body p {
+	text-align: justify;
 }
 
 .services-card h1,
@@ -286,6 +292,10 @@
 	transition: all 0.5s ease;
 	text-shadow: none;
 	cursor: pointer;
+}
+
+.contactus-text1 p {
+	text-align: justify;
 }
 
 .contactus-text1 i,

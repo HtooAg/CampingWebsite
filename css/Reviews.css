@@ -12,8 +12,8 @@
 	margin: auto;
 	object-fit: cover;
 	object-position: center;
-	height: 50%;
-	width: 80%;
+	height: 80%;
+	width: 100%;
 }
 
 .customer-review > * {
@@ -117,9 +117,11 @@ progress::-webkit-progress-value {
 	margin: 20px 0px 0px 0px;
 }
 
-.reviews-icons i {
+.reviews-icons i,
+.filled-star {
 	color: rgb(206, 206, 0);
 }
+
 .contact-form {
 	display: flex;
 	flex-direction: column;
@@ -162,6 +164,11 @@ textarea {
 @media (max-width: 989px) {
 	.contact-form {
 		width: 100%;
+	}
+
+	.rate,
+	.base {
+		font-size: 1.5em;
 	}
 }
 

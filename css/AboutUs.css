@@ -14,12 +14,15 @@
 	position: relative;
 }
 
-.aboutus2 img  {
+.aboutus2 img {
 	width: 100%;
-	/* width: 80%;
-	height: 80%;
-	margin: auto; */
 	object-fit: cover;
+}
+
+.aboutus2 .aboutus-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .card1,
@@ -36,9 +39,15 @@
 }
 
 .aboutus-body {
-	line-height: var(--primary-lineheight);
 	color: var(--primary-fc);
+	text-align: left;
 }
+
+.text {
+	line-height: var(--primary-lineheight);
+	text-align: justify;
+}
+
 .offer-contents .logo img {
 	object-fit: cover;
 	width: 100%;
@@ -62,7 +71,13 @@
 	text-align: center;
 	color: var(--primary-fc);
 }
-/* Media Queries */
+
+@media (max-width: 1200px) {
+	.offer-contents .logo img {
+		width: 300px;
+		height: 220px;
+	}
+}
 
 @media (max-width: 989px) {
 	.card2 {
@@ -74,12 +89,25 @@
 		height: 100%;
 		width: 100%;
 	}
+
+	.offer-contents > * {
+		flex: 1 1 30%;
+	}
+
+	.title-text {
+		font-size: var(--secondary-fz);
+	}
 }
 
 @media (max-width: 768px) {
 	.aboutus-card > * {
 		flex: 1 1 100%;
 	}
+
+	.title-text {
+		text-align: center;
+	}
+
 	.aboutus-text {
 		display: flex;
 		flex-direction: column;
@@ -87,25 +115,11 @@
 		align-items: center;
 		text-align: center;
 	}
-}
 
-@media (max-width: 1200px) {
-	.offer-contents .logo img {
-		width: 180px;
-		height: 180px;
-	}
-}
-
-@media (max-width: 989px) {
-	.offer-contents > * {
-		flex: 1 1 30%;
-	}
-}
-
-@media (max-width: 767px) {
 	.offer-contents > * {
 		flex: 1 1 45%;
 	}
+
 	.offer-contents .logo {
 		display: flex;
 		justify-content: center;
