@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<!-- Navbar -->
-		<div class="navbar d-flex">
+		<section class="navbar d-flex">
 			<div class="container">
 				<div class="nav-contents d-flex">
 					<div class="logo">
@@ -43,7 +43,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!-- Slider -->
 
 		<div class="slider">
@@ -85,7 +85,7 @@
 				<div class="img-card d-flex">
 					<img src="./img/e8.jpg" alt="" />
 				</div>
-				<h1 class="rate" style="text-align: center; padding-top: 30px">
+				<h1 class="rate">
 					18L Camping Backpack with Waterproof - Green
 				</h1>
 			</div>
@@ -95,7 +95,7 @@
 				data-aos-duration="1000">
 				<div class="reviews-text">
 					<h1 class="rate">4.7</h1>
-					<div class="review-length" style="margin: 15px 0px">
+					<div class="review-length">
 						<i class="bi bi-star-fill"></i>
 						<i class="bi bi-star-fill"></i>
 						<i class="bi bi-star-fill"></i>
@@ -173,7 +173,7 @@
 			Reviews (4)
 		</p>
 		<div class="reviews d-flex mb-3">
-			<div class="container d-flex" style="gap: 2em">
+			<div class="container d-flex">
 				<div
 					class="reviews-card d-flex"
 					data-aos="fade-right"
@@ -229,7 +229,7 @@
 			</div>
 		</div>
 		<div class="reviews d-flex mb-3">
-			<div class="container d-flex" style="gap: 2em">
+			<div class="container d-flex">
 				<div
 					class="reviews-card d-flex"
 					data-aos="fade-right"
@@ -300,16 +300,26 @@
 
 			<p class="title-text my-3">Your Review</p>
 			<form class="container">
-				<div class="contact-form" style="margin: auto">
+				<div class="contact-form">
 					<div class="form-row">
 						<div class="row-form">
-							<label for="full-name">Full Name</label>
+							<label for="first-name">First Name</label>
 							<input
 								type="text"
-								id="full-name"
-								name="full-name"
+								id="first-name"
+								name="first-name"
 								class="mt-2"
-								placeholder="Name"
+								placeholder="First Name"
+								required />
+						</div>
+						<div class="row-form">
+							<label for="last-name">Last Name</label>
+							<input
+								type="text"
+								id="last-name"
+								name="last-name"
+								class="mt-2"
+								placeholder="Last Name"
 								required />
 						</div>
 						<div class="row-form">
@@ -329,20 +339,12 @@
 								name="message"
 								cols="20"
 								rows="10"
-								style="
-									resize: vertical;
-									font-family: var(--primary-font);
-								"
 								class="mt-2"
 								placeholder="Why do you recommend ..."></textarea>
 						</div>
 					</div>
-					<div class="form-actions" style="margin-top: 5px">
-						<a href="#">
-							<button type="submit" class="but">
-								Add a Review
-							</button>
-						</a>
+					<div class="form-actions">
+						<button type="submit" class="but">Add a Review</button>
 					</div>
 				</div>
 			</form>
@@ -352,7 +354,7 @@
 			<div class="footer-card container">
 				<ul class="footer-items my-3">
 					<li class="f-title pb-2">Company</li>
-					<li><a href="Offers.html">Services</a></li>
+					<li><a href="Offers.html">Offers</a></li>
 					<li><a href="Reviews.html">Reviews</a></li>
 					<li><a href="AboutUs.html">About Us</a></li>
 					<li><a href="ContactUs.html">Contact Us</a></li>
@@ -373,14 +375,14 @@
 				</ul>
 				<ul class="footer-items my-3">
 					<li class="f-title pb-2">Office</li>
-					<li style="line-height: var(--primary-lineheight)">
+					<li class="address">
 						<a href="#"
 							>No. 123, Alanpya Pagoda Road, <br />Dagon Township
 							Yangon, Myanmar. <br />(95-1) 8255819 – 21, 8255823
 							– 32, 8255834 <br />info@retailcampinggroup.com</a
 						>
 					</li>
-					<li style="text-align: right">
+					<li class="top">
 						<a href="#" title="Page Top"
 							><i class="bi bi-chevron-up"></i
 						></a>

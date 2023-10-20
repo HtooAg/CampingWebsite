@@ -28,6 +28,11 @@ tr:nth-child(even) {
 	color: var(--primary-fc);
 }
 
+.but > .bi-trash-fill {
+	font-size: var(--primary-fz);
+	color: firebrick;
+}
+
 @media (max-width: 989px) {
 	table {
 		font-size: 12px;

@@ -99,7 +99,8 @@ document.addEventListener("DOMContentLoaded", () => {
 const resetCart = () => {
 	const cart = [];
 	localStorage.setItem("cart", JSON.stringify(cart));
-	console.log("Cart has been reset.");
+	alert("All the carts will be removed.");
+	// console.log(cart);
 	setTimeout(() => {
 		location.reload();
 	}, 300);

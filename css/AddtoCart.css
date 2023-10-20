@@ -11,7 +11,7 @@
 
 .pagination .prev-page,
 .pagination .next-page {
-	font-size: 20px;
+	font-size: var(--primary-fz);
 }
 
 .pagination > ul > li {
@@ -102,11 +102,8 @@ del {
 	align-items: center;
 }
 
-.item > * {
-	padding: 0 10px;
-}
-
 .tent {
+	margin: 0 10px;
 	padding: 10px;
 	text-transform: uppercase;
 	color: gray;
@@ -179,7 +176,6 @@ del {
 
 /* Media Queries */
 @media (max-width: 989px) {
-
 	.cart img {
 		height: 350px;
 		margin: auto;
@@ -193,22 +189,40 @@ del {
 		padding: 10px 0;
 	}
 
-	.addtocart,
-	.payment {
-		font-size: 15px;
-	}
-
 	.pagination > ul {
 		justify-content: center;
 		align-items: center;
 	}
-	
+
+	.addtocart,
+	.payment {
+		font-size: var(--btn2-fz);
+	}
+}
+
+@media (max-width: 768px) {
 	.pagination > ul > li > a {
-		font-size: 12px;
+		font-size: 13px;
+		padding: 10px;
 	}
 }
 @media (max-width: 600px) {
+	.pagination > ul > li > a {
+		font-size: 0.7em;
+		padding: 0.4rem;
+	}
+
+	.img-text h1 {
+		font-size: 1.6em;
+		transition: all 0.5s;
+	}
+
 	.cart img {
 		width: 100%;
+	}
+
+	.addtocart,
+	.payment {
+		font-size: var(--btn1-fz);
 	}
 }

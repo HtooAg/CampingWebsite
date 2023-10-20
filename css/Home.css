@@ -123,6 +123,10 @@
 	right: 0;
 }
 
+#aboutus {
+	text-align: left;
+}
+
 .aboutus-body {
 	line-height: var(--primary-lineheight);
 	color: var(--primary-fc);
@@ -191,6 +195,10 @@
 	border-radius: 50%;
 }
 
+.reviews .container {
+	gap: 2em;
+}
+
 .reviews-card {
 	flex-direction: column;
 }
@@ -242,6 +250,10 @@
 }
 
 /* Contact Us */
+
+.contactus .container {
+	gap: 2em;
+}
 
 .contactus-card {
 	position: relative;

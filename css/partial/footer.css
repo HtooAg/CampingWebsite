@@ -34,6 +34,14 @@
 	text-decoration: underline;
 }
 
+.address {
+	line-height: var(--primary-lineheight);
+}
+
+.top {
+	text-align: right;
+}
+
 .footer {
 	background-color: rgb(82, 82, 82);
 	padding: 20px 0;

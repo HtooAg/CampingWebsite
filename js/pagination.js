@@ -1,5 +1,5 @@
 // Pagination
-const itemsPerPage = 4;
+const itemsPerPage = 8;
 const $cards = $(".card");
 const $pagination = $(".pagination");
 const pageCount = Math.ceil($cards.length / itemsPerPage);
@@ -65,6 +65,10 @@ const getPageFromText = pageText => {
 			return 2;
 		case "Cookwares":
 			return 3;
+		case "Equipments":
+			return 4;
+		case "Sets":
+			return 5;
 		default:
 			return 1;
 	}

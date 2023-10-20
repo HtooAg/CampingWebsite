@@ -26,6 +26,12 @@
 	gap: 2em;
 }
 
+.customer-review .rate {
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 30px;
+}
+
 progress {
 	height: 6px;
 	border: 1px solid #d3d3d3;
@@ -51,7 +57,7 @@ progress::-webkit-progress-value {
 
 .reviews-text .rate {
 	font-size: var(--tertiary-fz);
-	margin-top: 10px;
+	margin: 10px 15px;
 }
 
 .reviews-text .base {
@@ -80,6 +86,10 @@ progress::-webkit-progress-value {
 	font-size: 25px;
 	padding: 0px 6px;
 	color: rgb(206, 206, 0);
+}
+
+.reviews .container {
+	gap: 2em;
 }
 
 .reviews-card .img-card {
@@ -128,6 +138,7 @@ progress::-webkit-progress-value {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 50%;
+	margin: auto;
 }
 
 .contact-form input,
@@ -201,7 +212,7 @@ textarea {
 	}
 
 	.reviews-text > .base {
-		font-size: var(--primary-fz);
+		font-size: var(--secondary-fz);
 		margin-bottom: 12px;
 	}
 
