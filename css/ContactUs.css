@@ -23,7 +23,9 @@
 iframe {
 	width: 100%;
 	height: 450px;
+	border: none;
 }
+
 .contactus .container {
 	gap: 2em;
 }
@@ -164,19 +166,21 @@ textarea {
 	.contact-form > * {
 		flex: 1 1 100%;
 	}
-	/* 
-	.contact-form .form-actions {
-		justify-content: center;
-	} */
 }
 
 @media (max-width: 767px) {
 	.contact .container > * {
 		flex: 1 1 100%;
 	}
+
 	.contact .container .contact-icons {
 		margin: 20px 0;
 	}
+	
+	.contact .container .contact-icons h1 {
+		font-size: var(--btn2-fz);
+	}
+	
 	.contactus > * {
 		flex-direction: column;
 	}

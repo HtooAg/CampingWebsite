@@ -34,13 +34,19 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 989px) {
-	table {
-		font-size: 12px;
-	}
-
 	table > tr,
 	th,
 	td {
 		padding: 0.7rem;
+	}
+}
+
+@media (max-width: 786px) {
+	table th {
+		font-size: 0.8rem;
+	}
+
+	table td{
+		font-size: 11px;
 	}
 }

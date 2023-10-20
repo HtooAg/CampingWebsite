@@ -47,10 +47,6 @@ progress::-webkit-progress-value {
 	background-color: rgb(206, 206, 0);
 }
 
-.reviews-textcard > * {
-	flex: 1/5;
-}
-
 .reviews-text {
 	text-align: center;
 }
