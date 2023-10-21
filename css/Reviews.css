@@ -47,6 +47,10 @@ progress::-webkit-progress-value {
 	background-color: rgb(206, 206, 0);
 }
 
+progress::-moz-progress-bar {
+	background-color: rgb(206, 206, 0);
+}
+
 .reviews-text {
 	text-align: center;
 }
