@@ -130,7 +130,7 @@
 .aboutus-body {
 	line-height: var(--primary-lineheight);
 	color: var(--primary-fc);
-	text-align: justify;
+	/* text-align: justify; */
 }
 
 /* Media Queries */
@@ -306,9 +306,9 @@
 	cursor: pointer;
 }
 
-.contactus-text1 p {
+/* .contactus-text1 p {
 	text-align: justify;
-}
+} */
 
 .contactus-text1 i,
 .text-card i {
@@ -330,7 +330,7 @@
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	.contactus > * {
 		flex-direction: column;
 	}
