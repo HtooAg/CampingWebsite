@@ -49,4 +49,9 @@ tr:nth-child(even) {
 	table td{
 		font-size: 11px;
 	}
+
+	.but {
+		padding: 10px;
+		font-size: 12px;
+	}
 }
