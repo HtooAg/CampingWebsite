@@ -225,3 +225,9 @@ del {
 		font-size: var(--btn1-fz);
 	}
 }
+@media (max-width: 375px) {
+	.addtocart,
+	.payment {
+		font-size: 0.8em;
+	}
+}

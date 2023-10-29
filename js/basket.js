@@ -63,18 +63,21 @@ document.addEventListener("DOMContentLoaded", () => {
 	let totalAmount = 0;
 
 	if (cartItemsContainer) {
-		cart.forEach(productData => {
+		cart.forEach((productData, index) => {
 			const row = document.createElement("tr");
 			row.innerHTML = `
-			<td>${productData.name}</td>
-			<td>$${productData.price ? productData.price.toFixed(2) : 0}</td>
-			<td>${productData.quantity || 0}</td>
-			<td>$${
-				productData.price && productData.quantity
-					? (productData.price * productData.quantity).toFixed(2)
-					: 0
-			}</td>
-		  `;
+				<td>${productData.name}</td>
+				<td>$${productData.price ? productData.price.toFixed(2) : 0}</td>
+				<td>${productData.quantity || 0}</td>
+				<td>$${
+					productData.price && productData.quantity
+						? (productData.price * productData.quantity).toFixed(2)
+						: 0
+				}</td>
+				<td><button onclick="removeItem(${index})">
+					<i class="bi bi-trash-fill"></i>
+				</button></td>
+`;
 
 			cartItemsContainer.appendChild(row);
 
@@ -86,22 +89,22 @@ document.addEventListener("DOMContentLoaded", () => {
 		if (cart.length > 0) {
 			const totalRow = document.createElement("tr");
 			totalRow.innerHTML = `
-			<td colspan="3">Total:</td>
-			<td>$${totalAmount.toFixed(2)}</td>
-		  `;
+                <td colspan="3">Total:</td>
+                <td>$${totalAmount.toFixed(2)}</td>
+            `;
 
 			cartItemsContainer.appendChild(totalRow);
 		}
 	}
 });
 
-// Clear cart
-const resetCart = () => {
-	const cart = [];
-	localStorage.setItem("cart", JSON.stringify(cart));
-	alert("All the carts will be removed.");
-	// console.log(cart);
-	setTimeout(() => {
+// Remove Item
+const removeItem = index => {
+	const cart = JSON.parse(localStorage.getItem("cart")) || [];
+	if (index >= 0 && index < cart.length) {
+		cart.splice(index, 1);
+		localStorage.setItem("cart", JSON.stringify(cart));
+		alert("Are you sure to remove this item?");
 		location.reload();
-	}, 300);
+	}
 };

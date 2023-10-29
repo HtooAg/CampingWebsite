@@ -16,6 +16,7 @@ td {
 	padding: 1rem;
 	border: 1px solid #d3d3d3;
 	color: var(--primary-fc);
+	transition: all 0.5s;
 }
 
 tr:nth-child(even) {
@@ -28,7 +29,13 @@ tr:nth-child(even) {
 	color: var(--primary-fc);
 }
 
-.but > .bi-trash-fill {
+button {
+	outline: 0;
+	border: none;
+}
+
+.bi-trash-fill {
+	cursor: pointer;
 	font-size: var(--primary-fz);
 	color: firebrick;
 }
@@ -46,11 +53,11 @@ tr:nth-child(even) {
 		font-size: 0.8rem;
 	}
 
-	table td{
+	table td {
 		font-size: 11px;
 	}
 
-	.but {
+	button {
 		padding: 10px;
 		font-size: 12px;
 	}
