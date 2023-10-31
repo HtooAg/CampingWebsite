@@ -1,5 +1,4 @@
 // AddtoCart
-
 document.addEventListener("DOMContentLoaded", () => {
 	const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -57,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 });
 
+// Basket table
 document.addEventListener("DOMContentLoaded", () => {
 	const cart = JSON.parse(localStorage.getItem("cart")) || [];
 	const cartItemsContainer = document.getElementById("cart-items");
@@ -66,18 +66,22 @@ document.addEventListener("DOMContentLoaded", () => {
 		cart.forEach((productData, index) => {
 			const row = document.createElement("tr");
 			row.innerHTML = `
-				<td>${productData.name}</td>
-				<td>$${productData.price ? productData.price.toFixed(2) : 0}</td>
-				<td>${productData.quantity || 0}</td>
-				<td>$${
-					productData.price && productData.quantity
-						? (productData.price * productData.quantity).toFixed(2)
-						: 0
-				}</td>
-				<td><button onclick="removeItem(${index})">
+			<td data-label="Product Name:">${productData.name}</td>
+			<td data-label="Price:">$${
+				productData.price ? productData.price.toFixed(2) : 0
+			}</td>
+			<td data-label="Quantity:">${productData.quantity || 0}</td>
+			<td data-label="Total:">$${
+				productData.price && productData.quantity
+					? (productData.price * productData.quantity).toFixed(2)
+					: 0
+			}</td>
+			<td data-label="Trash:">
+				<button onclick="removeItem(${index})">
 					<i class="bi bi-trash-fill"></i>
-				</button></td>
-`;
+				</button>
+			</td>
+		`;
 
 			cartItemsContainer.appendChild(row);
 
