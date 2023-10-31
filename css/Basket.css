@@ -6,7 +6,7 @@ table {
 table tr,
 table th,
 table td {
-	padding: var(--btn2-fz);
+	padding: var(--primary-fz);
 	border: 1px solid #d3d3d3;
 	transition: all 0.5s;
 	text-align: center;

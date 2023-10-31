@@ -109,6 +109,8 @@ const removeItem = index => {
 		cart.splice(index, 1);
 		localStorage.setItem("cart", JSON.stringify(cart));
 		alert("Are you sure to remove this item?");
-		location.reload();
+		setTimeout(() => {
+			location.reload();
+		}, 300)
 	}
 };
