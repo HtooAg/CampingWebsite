@@ -5,9 +5,20 @@ This repository contains the source code for a dynamic and interactive camping w
 ## Technologies Used
 
 - **HTML**
+  - Structure and content of the web pages.
+  - Forms and input elements for user interaction.
+
 - **CSS**
+  - Styling and layout of the web pages.
+  - Animations and transitions to enhance user experience.
+
 - **JavaScript**
+  - Features of adding products to the basket.
+  - Used AOS JS for animations when scrolling.
+
 - **jQuery**
+  - Used Paginations for searching the related products.
+  - Used carousel slider for informations.
 
 ## Getting Started
 
